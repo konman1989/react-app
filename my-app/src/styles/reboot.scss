@@ -1,0 +1,29 @@
+@import "fonts";
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: $main-font;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+button {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}

@@ -1,0 +1,27 @@
+@import './../../styles/colors';
+@import './../../styles/fonts';
+
+.button {
+  color: $white;
+  font-family: $main-font;
+
+  &--login {
+    min-width: 100px;
+    height: 37px;
+    opacity: 0.81;
+    border-radius: 18.5px;
+    border: solid 1px $grey2;
+    background-color: $green-pale;
+    text-transform: uppercase;
+    margin-left: 60px;
+  }
+
+  &--home {
+    min-width: 254px;
+    height: 73px;
+    border-radius: 10px;
+    background-color: $green;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

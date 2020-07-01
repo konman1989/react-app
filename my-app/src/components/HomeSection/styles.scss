@@ -1,0 +1,45 @@
+@import './../../styles/colors';
+
+.home {
+  min-height: 570px;
+  background: rgba(112, 112, 112, 0.29);
+  position: relative;
+
+  &::after {
+    content: "";
+    min-height: 570px;
+    background: url("./../../assets/images/home.svg") no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__content-container {
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      color: $white;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 400;
+      color: $white;
+      margin-bottom: 32px;
+    }
+
+  }
+
+}
