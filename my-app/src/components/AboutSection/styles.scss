@@ -1,0 +1,32 @@
+@import "./../../styles/colors";
+
+.about {
+  &__content-container {
+    min-height: 1050px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+  &__text {
+    padding-top: 42px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+      color: $grey3;
+      text-transform: uppercase;
+    }
+
+    p {
+      padding-top: 32px;
+      font-size: 20px;
+      line-height: 1.75;
+      opacity: 0.71;
+      text-align: center;
+    }
+  }
+
+}

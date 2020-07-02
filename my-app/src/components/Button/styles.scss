@@ -4,6 +4,7 @@
 .button {
   color: $white;
   font-family: $main-font;
+  opacity: 0.9;
 
   &--login {
     min-width: 100px;
@@ -23,5 +24,13 @@
     background-color: $green;
     font-size: 20px;
     font-weight: 600;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: rgba(160,186,13,0.99);
   }
 }
