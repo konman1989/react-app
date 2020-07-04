@@ -1,11 +1,13 @@
 import React from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
 function ImageWrapper(props) {
-    return <div className={`image-wrapper ${props.imageStyle}`}>
-        <img src={props.imageSrc} alt={props.imageName}/>
+  return (
+    <div className={`image-wrapper ${props.className}`}>
+      <img src={props.src} alt={props.name} />
     </div>
+  );
 }
 
 export default ImageWrapper;

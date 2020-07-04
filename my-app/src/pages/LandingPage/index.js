@@ -5,11 +5,13 @@ import HomeSection from "../../components/HomeSection";
 import AboutSection from "../../components/AboutSection";
 
 function LandingPage() {
-    return <div>
-        <Header/>
-        <HomeSection/>
-        <AboutSection/>
-    </div>;
+  return (
+    <div>
+      <Header />
+      <HomeSection />
+      <AboutSection />
+    </div>
+  );
 }
 
 export default LandingPage;

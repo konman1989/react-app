@@ -6,17 +6,17 @@ import Button from "../Button";
 
 import "./styles.scss";
 
-
 function Header() {
-    return <header className="header">
-        <ContentWidthLimiter>
-            <div className="header__content-container">
-                <Navbar/>
-                <Button name='Login' buttonStyle='button--login'/>
-            </div>
-
-        </ContentWidthLimiter>
-    </header>;
+  return (
+    <header className="header">
+      <ContentWidthLimiter>
+        <div className="header__content-container">
+          <Navbar />
+          <Button name="Login" className="button--login" />
+        </div>
+      </ContentWidthLimiter>
+    </header>
+  );
 }
 
 export default Header;
