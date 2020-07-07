@@ -2,10 +2,10 @@ import React from "react";
 
 import "./styles.scss";
 
-function ImageWrapper(props) {
+function ImageWrapper({ className, name, src }) {
   return (
-    <div className={`image-wrapper ${props.className}`}>
-      <img src={props.src} alt={props.name} />
+    <div className={`image-wrapper ${className}`}>
+      <img src={src} alt={name} />
     </div>
   );
 }
