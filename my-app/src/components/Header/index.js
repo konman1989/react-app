@@ -1,7 +1,7 @@
 import React from "react";
 
 import ContentWidthLimiter from "../ContentWidthLimiter";
-import Navbar from "../Navbar";
+import Navbar from "./Navbar";
 import Button from "../Button";
 import Logo from "../Logo";
 

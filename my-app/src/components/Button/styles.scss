@@ -26,6 +26,22 @@
     font-weight: 600;
   }
 
+  &__promo {
+    min-width: 187px;
+    height: 51px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__promo--blue {
+    background-color: $blue;
+  }
+
+  &__promo--green {
+    background-color: $green;
+  }
+
   &:hover {
     opacity: 1;
   }

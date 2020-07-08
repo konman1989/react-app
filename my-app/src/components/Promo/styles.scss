@@ -1,0 +1,40 @@
+@import "./../../styles/colors.scss";
+@import "./../../styles/fonts.scss";
+
+.promo {
+  width: 100%;
+  background: linear-gradient(90deg, $blue-pale 50%, $yellow-pale 50%) ;
+
+  &__content-container {
+    display: flex;
+  }
+}
+
+.card {
+  min-height: 306px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-left: 114px;
+  }
+
+  &__text-wrapper {
+    margin-left: 60px;
+
+    h2 {
+      font-size: 28px;
+      font-family: $montserrat;
+      color: $grey3;
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+
+    p {
+      font-size: 18px;
+      color: $grey3;
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+  }
+}

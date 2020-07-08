@@ -2,8 +2,8 @@ import React from "react";
 
 import ContentWidthLimiter from "../ContentWidthLimiter";
 import ImageWrapper from "../ImageWrapper";
-import NavbarAbout from "../NavbarAbout";
-import SliderAbout from "../SliderAbout";
+import NavbarAbout from "./NavbarAbout";
+import SliderAbout from "./SliderAbout";
 import aboutIcon from "./../../assets/images/about-icon.svg";
 
 import "./styles.scss";
