@@ -12,8 +12,4 @@
     color: $grey1;
     white-space: nowrap;
   }
-
-  @media screen and (max-width: $breakpoint-up-md) {
-      display: none;
-    }
 }

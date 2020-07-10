@@ -35,4 +35,12 @@ button {
 
 a {
 	text-decoration: none;
+	color: #000;
+
+	&:visited,
+	&:active,
+	&:hover,
+	&:link {
+		outline: none !important;
+	}
 }

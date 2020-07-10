@@ -1,4 +1,3 @@
-import React from "react";
 import aboutGlasses from "../assets/images/about-glasses.svg";
 import promo1 from "../assets/images/promo-1.svg";
 import promo2 from "../assets/images/promo-2.svg";

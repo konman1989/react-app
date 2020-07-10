@@ -1,0 +1,58 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/configs.scss';
+
+.landing-sidebar {
+  width: 320px;
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  height: 100vh;
+  background-color: $white;
+  z-index: 9998;
+  transform: translateX(100%);
+  transition: transform $anim-time ease;
+  box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+  @media screen and (max-width: $breakpoint-up-md) {
+    display: block;
+  }
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-item {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $grey7;
+    }
+
+    & > * {
+      &:first-child {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $grey4;
+      }
+
+      &:last-child {
+        margin: 0 48px;
+      }
+    }
+  }
+}
