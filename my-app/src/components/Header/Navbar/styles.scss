@@ -1,4 +1,5 @@
 @import "../../../styles/colors";
+@import '../../../styles/configs';
 
 .navbar {
   display: flex;
@@ -11,4 +12,8 @@
     color: $grey1;
     white-space: nowrap;
   }
+
+  @media screen and (max-width: $breakpoint-up-md) {
+      display: none;
+    }
 }

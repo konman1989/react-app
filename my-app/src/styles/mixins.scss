@@ -1,39 +1,3 @@
-@import "colors";
-@import "configs";
 
-@mixin center-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-@mixin promo-section($url, $flex-position) {
-  background-image: url($url);
-
-  &__content-container {
-    min-height: 700px;
-    padding-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: $flex-position;
-
-    @media screen and (max-width: $breakpoint-up-xxs){
-      min-height: 500px;
-      padding-top: 64px;
-    }
-  }
-
-  &__content {
-    max-width: 540px;
-    min-height: 372px;
-    background-color: rgba($grey-transparent, 0.8);
-    padding: 50px 32px;
-
-    @media screen and (max-width: $breakpoint-up-xs){
-      text-align: center;
-    }
-  }
-}
 
 

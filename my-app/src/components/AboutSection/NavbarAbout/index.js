@@ -1,17 +1,13 @@
 import React from "react";
 
-import "./styles.scss";
+import { aboutNavbarList } from "../../../constants/landingPage";
 
-const navbarList = [
-  { name: "simple", to: "simple" },
-  { name: "transparent", to: "transparent" },
-  { name: "collaborative", to: "collaborative" },
-];
+import "./styles.scss";
 
 function NavbarAbout() {
   return (
     <nav className="navbar-about">
-      {navbarList.map((item, index) => {
+      {aboutNavbarList.map((item, index) => {
         return (
           <a className="navbar-about__item" href={`#${item.to}`}>
             <span className="navbar-about__icon">{index + 1}</span>
