@@ -6,6 +6,7 @@
   color: $white;
   font-family: $main-font;
   opacity: 0.9;
+  border-radius: 10px;
 
   &--login {
     min-width: 100px;
@@ -25,7 +26,6 @@
   &--home {
     min-width: 254px;
     height: 73px;
-    border-radius: 10px;
     background-color: $green;
     font-size: 20px;
     font-weight: 600;
@@ -34,7 +34,6 @@
   &__promo {
     min-width: 187px;
     height: 51px;
-    border-radius: 10px;
     font-size: 14px;
     font-weight: 600;
   }
@@ -45,6 +44,26 @@
 
   &__promo--green {
     background-color: $green;
+  }
+
+  &__projects-member {
+    min-width: 181px;
+    height: 50px;
+    opacity: 0.71;
+    border: solid 1px rgba($grey3, 0.41);
+    color: $grey3;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__projects-details {
+    min-width: 136px;
+    height: 20px;
+    opacity: 0.85;
+    color: $black;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
   }
 
   &:hover {

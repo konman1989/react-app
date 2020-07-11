@@ -12,7 +12,7 @@ ImageWrapper.propTypes = {
 function ImageWrapper({ className, name, src }) {
   return (
     <div className={`image-wrapper ${className}`}>
-      <img src={src} alt={name} />
+      <img className="img-cover" src={src} alt={name} />
     </div>
   );
 }

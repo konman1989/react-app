@@ -1,6 +1,9 @@
 import aboutGlasses from "../assets/images/about-glasses.svg";
 import promo1 from "../assets/images/promo-1.svg";
 import promo2 from "../assets/images/promo-2.svg";
+import project1 from "../assets/images/project-1.png";
+import project2 from "../assets/images/project-2.png";
+import project3 from "../assets/images/project-3.png";
 
 export const aboutSliderList = [
   {
@@ -47,5 +50,47 @@ export const promoCardList = [
     title: "Find Buyers",
     text:
       "Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here.",
+  },
+];
+
+export const projectsCardList = [
+  {
+    image: {
+      img: project1,
+      imgClassName: "image-wrapper--project",
+      imgName: "project-1",
+    },
+    price: "3600 GPB",
+    title: "Ontario Tower, LONDON",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    percentFunded: "10% funded",
+    daysLeft: "8 days left",
+  },
+  {
+    image: {
+      img: project2,
+      imgClassName: "image-wrapper--project",
+      imgName: "project-2",
+    },
+    price: "4000 GPB",
+    title: "London Tower, ONTARIO",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    percentFunded: "10% funded",
+    daysLeft: "12 days left",
+  },
+  {
+    image: {
+      img: project3,
+      imgClassName: "image-wrapper--project",
+      imgName: "project-3",
+    },
+    price: "6000 GPB",
+    title: "Ontario Tower, LONDON",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    percentFunded: "10% funded",
+    daysLeft: "20 days left",
   },
 ];

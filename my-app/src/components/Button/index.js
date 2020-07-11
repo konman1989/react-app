@@ -9,7 +9,12 @@ Button.propTypes = {
 };
 
 function Button({ className, name }) {
-  return <button className={`button ${className}`}>{name}</button>;
+  return (
+    <button className={`button ${className}`}>
+      {name}
+      {/*<span />*/}
+    </button>
+  );
 }
 
 export default Button;
