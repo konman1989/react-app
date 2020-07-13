@@ -1,0 +1,36 @@
+@import "./../../styles/colors";
+
+.testimonials {
+  background: url("./../../assets/images/testimonials.png") no-repeat;
+  background-size: cover;
+
+  &__content-container {
+    min-height: 608px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title-block {
+    margin-bottom: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 39px;
+      font-weight: 600;
+      line-height: 1.75;
+      color: $green2;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 1.75;
+      text-align: center;
+      color: $grey12;
+    }
+  }
+
+}

@@ -4,6 +4,8 @@ import promo2 from "../assets/images/promo-2.svg";
 import project1 from "../assets/images/project-1.png";
 import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.png";
+import beckham from "../assets/images/testimonials-beckham.png";
+import notBeckham from "../assets/images/testimonials-not-beckham.png";
 
 export const aboutSliderList = [
   {
@@ -92,5 +94,30 @@ export const projectsCardList = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     percentFunded: "10% funded",
     daysLeft: "20 days left",
+  },
+];
+
+export const testimonialsList = [
+  {
+    title: "One of the Best ",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.",
+    author: "David Beckham",
+    image: {
+      img: beckham,
+      imgClassName: "image-wrapper--testimonials",
+      imgName: "testimonials-1",
+    },
+  },
+  {
+    title: "Exellent Service ",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.",
+    author: "Not David Beckham",
+    image: {
+      img: notBeckham,
+      imgClassName: "image-wrapper--testimonials",
+      imgName: "testimonials-2",
+    },
   },
 ];

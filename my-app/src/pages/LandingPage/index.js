@@ -5,6 +5,7 @@ import HomeSection from "../../components/HomeSection";
 import AboutSection from "../../components/AboutSection";
 import Promo from "../../components/Promo";
 import Projects from "../../components/Projects";
+import Testimonials from "../../components/Testimonials";
 
 function LandingPage() {
   return (
@@ -14,6 +15,7 @@ function LandingPage() {
       <AboutSection />
       <Promo />
       <Projects />
+      <Testimonials />
     </div>
   );
 }
