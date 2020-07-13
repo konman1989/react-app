@@ -9,7 +9,7 @@ function NavbarAbout() {
     <nav className="navbar-about">
       {aboutNavbarList.map((item, index) => {
         return (
-          <a className="navbar-about__item" href={`#${item.to}`}>
+          <a key={index} className="navbar-about__item" href={`#${item.to}`}>
             <span className="navbar-about__icon">{index + 1}</span>
             <p className="navbar-about__text">{item.name}</p>
           </a>

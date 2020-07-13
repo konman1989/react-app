@@ -7,9 +7,9 @@ import "./styles.scss";
 function Navbar() {
   return (
     <nav className="navbar">
-      {headerNavbarList.map((item) => {
+      {headerNavbarList.map((item, index) => {
         return (
-          <a className="navbar__item" href={`#${item.to}`}>
+          <a key={index} className="navbar__item" href={`#${item.to}`}>
             {item.name}
           </a>
         );

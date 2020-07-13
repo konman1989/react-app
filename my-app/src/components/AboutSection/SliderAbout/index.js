@@ -6,9 +6,9 @@ import { aboutSliderList } from "../../../constants/landingPage";
 import "./styles.scss";
 
 function SliderAbout() {
-  return aboutSliderList.map((item) => {
+  return aboutSliderList.map((item, index) => {
     return (
-      <div className="slider-about">
+      <div key={index} className="slider-about">
         <ImageWrapper
           className={item.imgClassName}
           src={item.img}

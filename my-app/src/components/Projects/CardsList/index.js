@@ -11,9 +11,11 @@ export default function CardsList() {
   return (
     <div className="projects__cards-list">
       <ul className="cards-list">
-        {projectsCardList.map((item) => {
+        {projectsCardList.map((item, index) => {
+          const progressBar = item.percentFunded.split(" ")[0];
+
           return (
-            <li className="cards-list__item">
+            <li className="cards-list__item" key={index}>
               <div className="cards-list__img-wrapper">
                 <ImageWrapper
                   className={item.image.imgClassName}
@@ -32,7 +34,12 @@ export default function CardsList() {
               <div className="text-wrapper cards-list__text-wrapper">
                 <h2>{item.title}</h2>
                 <p>{item.text}</p>
-                <div className="text-wrapper__progress-bar" />
+                <div
+                  className="text-wrapper__progress-bar"
+                  style={{
+                    background: `linear-gradient(to right, #add136 ${progressBar}, #e3e3e3 ${progressBar} 100%)`,
+                  }}
+                />
                 <div className="text-wrapper__progress-text">
                   <p>{item.percentFunded}</p>
                   <p>{item.daysLeft}</p>

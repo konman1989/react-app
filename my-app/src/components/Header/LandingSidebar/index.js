@@ -23,10 +23,8 @@ function LandingSidebar({ isOpen, list }) {
       <div className="landing-sidebar__list">
         {list.map((item, index) => {
           return (
-            <div className="landing-sidebar__list-item">
-              <a href={`#${item.to}`} key={index}>
-                {item.name}
-              </a>
+            <div key={index} className="landing-sidebar__list-item">
+              <a href={`#${item.to}`}>{item.name}</a>
             </div>
           );
         })}

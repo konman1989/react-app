@@ -64,7 +64,7 @@ export const projectsCardList = [
     title: "Ontario Tower, LONDON",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    percentFunded: "10% funded",
+    percentFunded: "30% funded",
     daysLeft: "8 days left",
   },
   {
@@ -77,7 +77,7 @@ export const projectsCardList = [
     title: "London Tower, ONTARIO",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    percentFunded: "10% funded",
+    percentFunded: "70% funded",
     daysLeft: "12 days left",
   },
   {

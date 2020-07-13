@@ -18,9 +18,9 @@ function Promo() {
 }
 
 function promoCard() {
-  return promoCardList.map((item) => {
+  return promoCardList.map((item, index) => {
     return (
-      <div className="card">
+      <div className="card" key={index}>
         <ImageWrapper
           className={item.imgClassName}
           src={item.img}
