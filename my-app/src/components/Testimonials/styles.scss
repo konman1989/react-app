@@ -1,4 +1,5 @@
 @import "./../../styles/colors";
+@import "./../../styles/configs";
 
 .testimonials {
   background: url("./../../assets/images/testimonials.png") no-repeat;
@@ -9,13 +10,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media screen and (max-width: $breakpoint-up-sm){
+      padding: 60px 0;
+    }
   }
 
   &__title-block {
-    margin-bottom: 112px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 72px;
 
     h2 {
       font-size: 39px;
@@ -23,6 +28,7 @@
       line-height: 1.75;
       color: $green2;
       margin-bottom: 32px;
+      text-align: center;
     }
 
     p {
@@ -30,6 +36,10 @@
       line-height: 1.75;
       text-align: center;
       color: $grey12;
+    }
+
+    @media screen and (max-width: $breakpoint-up-sm){
+      margin-bottom: 36px;
     }
   }
 

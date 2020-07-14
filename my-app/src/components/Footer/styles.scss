@@ -1,0 +1,20 @@
+@import "./../../styles/colors";
+
+.footer {
+  &__brands-list {
+    min-height: 132px;
+    border-bottom: 1px solid rgba($grey11, 0.22);
+    display: flex;
+    align-items: center;
+  }
+
+  &__copyright-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 64px;
+    font-size: 13px;
+    line-height: 1.75;
+    color: $grey12;
+  }
+}
