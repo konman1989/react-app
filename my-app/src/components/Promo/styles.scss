@@ -1,26 +1,48 @@
 @import "./../../styles/colors.scss";
+@import "./../../styles/configs.scss";
 @import "./../../styles/fonts.scss";
 
 .promo {
   width: 100%;
   background: linear-gradient(90deg, $blue-pale 50%, $yellow-pale 50%);
 
+  @media screen and(max-width: $breakpoint-down-sm) {
+      background: linear-gradient($blue-pale 50%, $yellow-pale 50%);
+    }
+
   &__content-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 112px;
+    min-height: 306px;
+    padding: 24px;
+
+    @media screen and(max-width: $breakpoint-down-md) {
+      grid-column-gap: 60px;
+    }
+
+    @media screen and(max-width: $breakpoint-down-sm) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
   }
 }
 
 .card {
   min-height: 306px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
   align-items: center;
 
-  &:last-child {
-    margin-left: 114px;
+  @media screen and(max-width: $breakpoint-down-md) {
+    grid-column-gap: 12px;
+    justify-items: center;
   }
 
+
   &__text-wrapper {
-    margin-left: 60px;
+    //margin-left: 60px;
 
     h2 {
       font-size: 28px;
@@ -28,6 +50,7 @@
       color: $grey3;
       font-weight: 400;
       margin-bottom: 28px;
+      white-space: nowrap;
     }
 
     p {

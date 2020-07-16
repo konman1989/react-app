@@ -46,8 +46,12 @@ export default function CardsList() {
                 </div>
                 <div className="text-wrapper__button">
                   <Button
-                    className="button__projects-details"
+                    className="button__projects-details button__projects-details--long"
                     name="see projects details"
+                  />
+                  <Button
+                    className="button__projects-details button__projects-details--short"
+                    name="details"
                   />
                   <span />
                 </div>

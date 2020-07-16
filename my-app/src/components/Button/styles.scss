@@ -64,9 +64,36 @@
     font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
-    //white-space: nowrap;
+    white-space: nowrap;
   }
 
+  &__projects-details {
+    max-width: 136px;
+    height: 20px;
+    opacity: 0.85;
+    color: $black;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+
+  &__projects-details--long {
+  }
+
+  &__projects-details--short {
+    display: none;
+  }
+
+  @media screen and (max-width: $breakpoint-down-sm){
+    &__projects-details--short {
+      display: block;
+    }
+
+    &__projects-details--long {
+      display: none;
+    }
+  }
   &:hover {
     opacity: 1;
   }
