@@ -1,14 +1,24 @@
 @import "../../../styles/colors";
+@import "../../../styles/configs";
 
 .slider-about {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 660px) ;
+  grid-template-columns: 1fr minmax(0, 660px);
+  grid-column-gap: 106px;
   align-items: center;
   max-width: 878px;
 
-  &__text-wrapper {
-    margin-left: 106px;
+  @media screen and (max-width: $breakpoint-down-sm) {
+    grid-column-gap: 60px;
+  }
 
+  @media screen and (max-width: $breakpoint-down-xs) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 48px;
+    justify-items: center;
+  }
+
+  &__text-wrapper {
     h2 {
       font-size: 24px;
       color: $green-pale;
@@ -22,5 +32,9 @@
       color: $grey6;
       line-height: 1.75;
     }
+
+    @media screen and (max-width: $breakpoint-down-xs) {
+      text-align: center;
+  }
   }
 }
