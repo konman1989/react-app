@@ -40,10 +40,14 @@
     justify-items: center;
   }
 
+  @media screen and(max-width: $breakpoint-down-xs) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 48px;
+    margin-bottom: 24px;
+  }
+
 
   &__text-wrapper {
-    //margin-left: 60px;
-
     h2 {
       font-size: 28px;
       font-family: $montserrat;
@@ -59,5 +63,9 @@
       line-height: 1.75;
       margin-bottom: 28px;
     }
+
+    @media screen and(max-width: $breakpoint-down-xs) {
+      text-align: center;
+  }
   }
 }
