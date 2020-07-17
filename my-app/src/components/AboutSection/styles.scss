@@ -1,4 +1,5 @@
 @import "./../../styles/colors";
+@import "./../../styles/configs";
 
 .about {
   &__content-container {
@@ -7,7 +8,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      padding: 60px 0;
     }
+  }
 
   &__text {
     padding-top: 42px;
@@ -28,6 +33,11 @@
       opacity: 0.71;
       text-align: center;
     }
+
+    @media screen and (max-width: $breakpoint-down-sm) {
+      margin-bottom: 48px;
+    }
   }
+
 
 }
