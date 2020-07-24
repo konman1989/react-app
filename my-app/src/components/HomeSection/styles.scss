@@ -24,22 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    h1 {
-      font-size: 48px;
-      font-weight: 600;
-      color: $white;
-      margin-bottom: 32px;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 36px;
-      font-weight: 400;
-      color: $white;
-      margin-bottom: 32px;
-    }
-
+    padding: 0 20px;
   }
 
 }

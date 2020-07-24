@@ -121,3 +121,18 @@ export const testimonialsList = [
     },
   },
 ];
+
+export const homeSliderList = [
+  {
+    title: "Intellectual Property has the Shelf Life",
+    subtitle: "of a banana.",
+  },
+  {
+    title: "Some Other Stupid Words Sound like",
+    subtitle: "a word of wisdom.",
+  },
+  {
+    title: "The Only Purpose of this Silly Text",
+    subtitle: "is to sell.",
+  },
+];
