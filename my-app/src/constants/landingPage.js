@@ -1,4 +1,5 @@
-import aboutGlasses from "../assets/images/about-glasses.svg";
+import React from "react";
+
 import promo1 from "../assets/images/promo-1.svg";
 import promo2 from "../assets/images/promo-2.svg";
 import project1 from "../assets/images/project-1.png";
@@ -7,21 +8,57 @@ import project3 from "../assets/images/project-3.png";
 import beckham from "../assets/images/testimonials-beckham.png";
 import notBeckham from "../assets/images/testimonials-not-beckham.png";
 
-export const aboutSliderList = [
+import { SliderAbout } from "../components/AboutSection/SliderAbout";
+
+import {
+  FaGlasses,
+  FaProjectDiagram,
+  FaFacebookMessenger,
+} from "react-icons/fa";
+
+export const aboutTabList = [
   {
-    img: aboutGlasses,
-    imgClassName: "image-wrapper--glasses",
-    imgName: "about-glasses",
+    name: "tabOne",
     title: "Browse projects, like booking a hotel online !",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    icon: () => <FaProjectDiagram />,
+  },
+  {
+    name: "tabTwo",
+    title: "Read articles, like riding and Uber!",
+    text:
+      "Amet autem corporis cupiditate deleniti distinctio doloremque dolores, ea enim hic illo in inventore, iste non obcaecati perferendis perspiciatis placeat quia quis quos rerum saepe similique tempore? Quibusdam, quidem voluptates!",
+    icon: () => <FaGlasses />,
+  },
+  {
+    name: "tabThree",
+    title: "Join community, like sending a Facebook message!",
+    text:
+      "Animi beatae cum deserunt ea eveniet ex impedit inventore, itaque pariatur perferendis placeat quia ratione repudiandae tempore voluptate. At autem earum ipsa ipsam maxime odit omnis rem temporibus tenetur voluptas?",
+    icon: () => <FaFacebookMessenger />,
   },
 ];
 
-export const aboutNavbarList = [
-  { name: "simple", to: "simple" },
-  { name: "transparent", to: "transparent" },
-  { name: "collaborative", to: "collaborative" },
+export const tabsLinks = [
+  { name: "tabOne", title: "1", text: "simple" },
+  { name: "tabTwo", title: "2", text: "transparent" },
+  { name: "tabThree", title: "3", text: "collaborative" },
+];
+
+export const tabsContent = [
+  {
+    name: "tabOne",
+    content: () => <SliderAbout name="tabOne" />,
+  },
+  {
+    name: "tabTwo",
+    content: () => <SliderAbout name="tabTwo" />,
+  },
+  {
+    name: "tabThree",
+    content: () => <SliderAbout name="tabThree" />,
+  },
 ];
 
 export const headerNavbarList = [
@@ -128,7 +165,7 @@ export const homeSliderList = [
     subtitle: "of a banana.",
   },
   {
-    title: "Some Other Stupid Words Sound like",
+    title: "Some Stupid Words Sound like",
     subtitle: "a word of wisdom.",
   },
   {

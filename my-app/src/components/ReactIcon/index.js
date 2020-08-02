@@ -4,7 +4,7 @@ import classnames from "classnames";
 
 import "./styles.scss";
 
-export default function ReactIcon(props) {
+export const ReactIcon = (props) => {
   const { className, color, size, onClick, id } = props;
 
   const reactIconClass = classnames(
@@ -21,4 +21,4 @@ export default function ReactIcon(props) {
       {props.children}
     </div>
   );
-}
+};

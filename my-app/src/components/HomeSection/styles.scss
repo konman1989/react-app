@@ -1,9 +1,14 @@
 @import './../../styles/colors';
+@import './../../styles/configs';
 
 .home {
   min-height: 570px;
   background: rgba(112, 112, 112, 0.29);
   position: relative;
+
+  @media screen and (max-width: $breakpoint-up-xs){
+    padding: 60px 0;
+  }
 
   &::after {
     content: "";

@@ -2,13 +2,14 @@ import React from "react";
 
 import ContentWidthLimiter from "../ContentWidthLimiter";
 import ImageWrapper from "../ImageWrapper";
-import NavbarAbout from "./NavbarAbout";
-import SliderAbout from "./SliderAbout";
 import aboutIcon from "./../../assets/images/about-icon.svg";
 
 import "./styles.scss";
+import { Tabs } from "./Tabs";
 
-//TODO add onclick navigation
+import { tabsLinks } from "../../constants/landingPage";
+import { tabsContent } from "../../constants/landingPage";
+
 function AboutSection() {
   return (
     <section className="about">
@@ -33,8 +34,7 @@ function AboutSection() {
               eu fugiat nulla pariatur.
             </p>
           </div>
-          <NavbarAbout />
-          <SliderAbout />
+          <Tabs links={tabsLinks} content={tabsContent} />
         </div>
       </ContentWidthLimiter>
     </section>
