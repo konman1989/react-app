@@ -8,7 +8,7 @@ import "./styles.scss";
 
 function HomeSection() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <ContentWidthLimiter>
         <div className="home__content-container">
           <HomeSlider />
