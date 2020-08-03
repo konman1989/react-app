@@ -7,9 +7,8 @@ import CardsList from "./CardsList";
 import "./styles.scss";
 
 function Projects() {
-  //TODO add green icon to button
   return (
-    <section className="projects">
+    <section className="projects" id="discover">
       <ContentWidthLimiter>
         <div className="projects__title-block">
           <div className="projects__text-block">

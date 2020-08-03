@@ -12,7 +12,7 @@ import { tabsContent } from "../../constants/landingPage";
 
 function AboutSection() {
   return (
-    <section className="about">
+    <section className="about" id="how-it-works">
       <ContentWidthLimiter>
         <div className="about__content-container">
           <ImageWrapper
