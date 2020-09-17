@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live version can be found [here](https://jolly-blackwell-6473ec.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
